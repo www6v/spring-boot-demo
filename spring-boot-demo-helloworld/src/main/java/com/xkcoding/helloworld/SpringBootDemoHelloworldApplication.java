@@ -40,9 +40,9 @@ public class SpringBootDemoHelloworldApplication {
 //        System.setProperty("env", "DEV");
 
         System.setProperty("java._appid_", "int-website-arch-renault-portal-api");
-        System.setProperty("java._environment_", "prod");
-        System.setProperty("apollo.meta", "http://apollo.tuhu.cn:8090");
-        System.setProperty("env", "PROD");
+        System.setProperty("java._environment_", "production");
+        System.setProperty("apollo.meta", "http://apollo.ad.tuhu.cn:8080");
+        System.setProperty("env", "PRO");
 
 	    SpringApplication.run(SpringBootDemoHelloworldApplication.class, args);
 
