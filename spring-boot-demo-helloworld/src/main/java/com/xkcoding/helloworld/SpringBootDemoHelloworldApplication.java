@@ -34,10 +34,15 @@ public class SpringBootDemoHelloworldApplication {
     private static ChassisClient<String, Object> cache;
 
 	public static void main(String[] args) {
+//        System.setProperty("java._appid_", "int-website-arch-renault-portal-api");
+//        System.setProperty("java._environment_", "work");
+//        System.setProperty("apollo.meta", "http://apollo.tuhu.work:8090");
+//        System.setProperty("env", "DEV");
+
         System.setProperty("java._appid_", "int-website-arch-renault-portal-api");
-        System.setProperty("java._environment_", "work");
-        System.setProperty("apollo.meta", "http://apollo.tuhu.work:8090");
-        System.setProperty("env", "DEV");
+        System.setProperty("java._environment_", "prod");
+        System.setProperty("apollo.meta", "http://apollo.tuhu.cn:8090");
+        System.setProperty("env", "PROD");
 
 	    SpringApplication.run(SpringBootDemoHelloworldApplication.class, args);
 
